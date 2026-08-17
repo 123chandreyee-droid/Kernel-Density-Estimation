@@ -43,8 +43,7 @@ The overall workflow followed in the project is:
 The Kernel Density Estimator is given by:
 
 $$
-\hat{f}_h(x)
-=
+\hat{f}_h(x) =
 \frac{1}{nh}
 \sum_{i=1}^{n}
 K\left(\frac{x-x_i}{h}\right)
@@ -55,8 +54,7 @@ where $h$ is the bandwidth and $K$ is the kernel function.
 A Gaussian kernel was used:
 
 $$
-K(u)
-=
+K(u) =
 \frac{1}{\sqrt{2\pi}}
 e^{-u^2/2}
 $$
@@ -64,8 +62,7 @@ $$
 The bandwidth was selected by maximizing the leave-one-out log likelihood:
 
 $$
-L(h)
-=
+L(h) =
 \sum_{i=1}^{n}
 \log\left[\hat{f}_{-i,h}(x_i)\right]
 $$
